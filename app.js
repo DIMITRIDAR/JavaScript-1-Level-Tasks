@@ -71,3 +71,19 @@
 // console.log(
 //   longestCountryName(["Australia", "Germany", "United States of America"])
 // );
+
+//Task 4
+//In this task we have to write a JavaScript function that takes an array of numbers and finds the second lowest and
+//second greatest numbers, respectively.
+//Sample array:[1,2,3,4,5];
+//Expected output:2,4
+
+// function lowestAndGreatest(arr) {
+//   let sortedArr = arr.sort((a, b) => a - b);
+//   let secondLowest = sortedArr[1];
+//   let secondGreatest = sortedArr[sortedArr.length - 2];
+
+//   return [sortedArr[1], sortedArr[sortedArr.length - 2]];
+// }
+
+// console.log(lowestAndGreatest([1, 2, 3, 4, 5]));
