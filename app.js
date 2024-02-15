@@ -51,3 +51,23 @@
 // console.log(
 //   bubbleSort([12, 345, 4, 546, 122, 84, 98, 64, 9, 1, 3223, 455, 23, 234, 213])
 // );
+
+//Task 3
+//In this task we have to write a JavaScript function that accepts a list  of country names as input and returns
+//the longest country name as output.
+//Sample function:Longest_Country_Name(["Australia", "Germany", "United States of America"])
+//Expected output:"United States of America"
+
+// function longestCountryName(arr) {
+//   let longest = arr[0];
+//   for (i = 0; i < arr.length; i++) {
+//     if (arr[i].length > longest.length) {
+//       longest = arr[i];
+//     }
+//   }
+//   return longest;
+// }
+
+// console.log(
+//   longestCountryName(["Australia", "Germany", "United States of America"])
+// );
