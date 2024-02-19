@@ -129,3 +129,12 @@
 // }
 
 // console.log(alphabeticalOrder("webmaster"));
+
+//Task 7
+//In this task we have to write a JavaScript function that generates all combinations of a string.
+//example string:"dog"
+//Expected output:"d,do,dog,o,og,g"
+
+function generateAllCombinations(str) {}
+
+console.log(generateAllcombinations("dog"));
