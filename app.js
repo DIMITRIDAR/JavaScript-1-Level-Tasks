@@ -107,3 +107,14 @@
 // }
 
 // console.log(toUpperCase("the quick brown fox"));
+
+//Second way of solution
+
+// function toUpperCase(str) {
+//   return str
+//     .split(" ")
+//     .map((str) => str[0].toUpperCase() + str.slice(1))
+//     .join(" ");
+// }
+
+// console.log(toUpperCase("the quick brown fox"));
