@@ -87,3 +87,23 @@
 // }
 
 // console.log(lowestAndGreatest([1, 2, 3, 4, 5]));
+
+//Task 5
+//In this task we have to write a JavaScript function that accepts a string as a parameter and converts the first letter
+//of each word into upper case.
+//Example string:"the quick brown fox"
+//Expected output:"The Quick Brown Fox"
+
+//First way of solution
+
+// function toUpperCase(str) {
+//   let splittedString = str.split(" ");
+//   for (i = 0; i < splittedString.length; i++) {
+//     splittedString[i] =
+//       splittedString[i][0].toUpperCase() + splittedString[i].slice(1);
+//   }
+
+//   return splittedString.join(" ");
+// }
+
+// console.log(toUpperCase("the quick brown fox"));
