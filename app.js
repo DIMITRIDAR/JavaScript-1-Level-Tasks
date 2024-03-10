@@ -195,3 +195,8 @@
 // }
 
 // console.log(subArraySum([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
+
+//Task 2
+//Rotate Array: We have to write a function that rotates an array of n elements to the right by k steps.
+//For example, given the array: [1, 2, 3, 4, 5, 6, 7]  and k=3, the function should modify the array
+// to become: [5, 6, 7, 1, 2, 3, 4].
