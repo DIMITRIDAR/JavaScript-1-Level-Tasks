@@ -210,3 +210,8 @@
 // }
 
 // console.log(rotateArray([1, 2, 3, 4, 5, 6, 7], 3));
+
+//Task 3
+//In this task we have to find missing number:There's given an array, containing n distinct numbers, taken from
+//0, 1, 2, ..., n, and we have to find the missing number. For example, given the array:[3, 0, 1], the function
+//should return 2
