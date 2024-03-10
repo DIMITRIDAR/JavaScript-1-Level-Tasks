@@ -179,3 +179,19 @@
 //the contiguous subarray within the array that has the largest sum. Return the sum of that subarray.
 //For example, given the array :[-2, 1, -3, 4, -1, 2, 1, -5, 4], the function should return 6, which corresponds
 //to the sum of the subarray [4, -1, 2, 1].
+
+// function subArraySum(arr) {
+//   let currentSum = arr[0];
+//   let maxSum = arr[0];
+//   for (i = 1; i < arr.length; i++) {
+//     currentSum += arr[i];
+//     if (currentSum < arr[i]) {
+//       currentSum = arr[i];
+//     } else if (currentSum > maxSum) {
+//       maxSum = currentSum;
+//     }
+//   }
+//   return maxSum;
+// }
+
+// console.log(subArraySum([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
