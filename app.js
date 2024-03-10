@@ -172,3 +172,10 @@
 // }
 
 // console.log(notRepeated("abacddbec"));
+//.........................................................................................................................
+//Arrays
+//Task 1
+//In this task we have to find maximum subarray sum: Write a function that takes an array of integers as input and finds
+//the contiguous subarray within the array that has the largest sum. Return the sum of that subarray.
+//For example, given the array :[-2, 1, -3, 4, -1, 2, 1, -5, 4], the function should return 6, which corresponds
+//to the sum of the subarray [4, -1, 2, 1].
