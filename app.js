@@ -34,23 +34,23 @@
 // );
 
 //Second way of solution
-// function bubbleSort(arr) {
-//   for (let i = 0; i < arr.length - 1; i++) {
-//     for (let j = 0; j < arr.length - 1 - i; j++) {
-//       if (arr[j] < arr[j + 1]) {
-//         //Swapping two values here
-//         let temp = arr[j];
-//         arr[j] = arr[j + 1];
-//         arr[j + 1] = temp;
-//       }
-//     }
-//   }
-//   return arr;
-// }
 
-// console.log(
-//   bubbleSort([12, 345, 4, 546, 122, 84, 98, 64, 9, 1, 3223, 455, 23, 234, 213])
-// );
+function bubbleSort(arr) {
+  for (let i = 0; i < arr.length - 1; i++) {
+    for (let j = 0; j < arr.length - 1 - i; j++) {
+      if (arr[j] < arr[j + 1]) {
+        let temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
+    }
+  }
+  return arr;
+}
+
+console.log(
+  bubbleSort([12, 345, 4, 546, 122, 84, 98, 64, 9, 1, 3223, 455, 23, 234, 213])
+);
 
 //Task 3
 //In this task we have to write a JavaScript function that accepts a list  of country names as input and returns
@@ -137,4 +137,4 @@
 
 function generateAllCombinations(str) {}
 
-console.log(generateAllcombinations("dog"));
+console.log(generateAllCombinations("dog"));
