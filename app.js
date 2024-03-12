@@ -215,3 +215,13 @@
 //In this task we have to find missing number:There's given an array, containing n distinct numbers, taken from
 //0, 1, 2, ..., n, and we have to find the missing number. For example, given the array:[3, 0, 1], the function
 //should return 2
+
+// function missingNumber(arr) {
+//   let range = arr[arr.length - 1] - arr[0];
+// }
+
+// console.log(missingNumber([3, 0, 1]));
+
+//Task 4
+//Merge Intervals:Given an array of intervals, merge overlapping intervals and return the resulting merged intervals.
+//For example, given the intervals: [[1,3],[2,6],[8,10],[15,18]], the function should return [[1,6],[8,10],[15,18]].
