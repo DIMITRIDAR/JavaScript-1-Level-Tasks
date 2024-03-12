@@ -98,7 +98,7 @@
 
 // function toUpperCase(str) {
 //   let splittedString = str.split(" ");
-//   for (i = 0; i < splittedString.length; i++) {
+//   for (let i = 0; i < splittedString.length; i++) {
 //     splittedString[i] =
 //       splittedString[i][0].toUpperCase() + splittedString[i].slice(1);
 //   }
@@ -183,7 +183,7 @@
 // function subArraySum(arr) {
 //   let currentSum = arr[0];
 //   let maxSum = arr[0];
-//   for (i = 1; i < arr.length; i++) {
+//   for (let i = 1; i < arr.length; i++) {
 //     currentSum += arr[i];
 //     if (currentSum < arr[i]) {
 //       currentSum = arr[i];
@@ -202,7 +202,7 @@
 // to become: [5, 6, 7, 1, 2, 3, 4].
 
 // function rotateArray(arr, k) {
-//   for (i = 0; i < k; i++) {
+//   for (let i = 0; i < k; i++) {
 //     let popIt = arr.pop();
 //     arr.unshift(popIt);
 //   }
