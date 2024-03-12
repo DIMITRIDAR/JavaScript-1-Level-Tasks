@@ -216,17 +216,17 @@
 //0, 1, 2, ..., n, and we have to find the missing number. For example, given the array:[3, 0, 1], the function
 //should return 2
 
-function missingNumber(numbers) {
-  let min = Math.min(...numbers);
-  let max = Math.max(...numbers);
-  for (i = min; i <= max; i++) {
-    if (!numbers.includes(i)) {
-      return i;
-    }
-  }
-}
+// function missingNumber(numbers) {
+//   let min = Math.min(...numbers);
+//   let max = Math.max(...numbers);
+//   for (i = min; i <= max; i++) {
+//     if (!numbers.includes(i)) {
+//       return i;
+//     }
+//   }
+// }
 
-console.log(missingNumber([3, 0, 1]));
+// console.log(missingNumber([3, 0, 1]));
 
 //Task 4
 //Merge Intervals:Given an array of intervals, merge overlapping intervals and return the resulting merged intervals.
@@ -236,7 +236,21 @@ console.log(missingNumber([3, 0, 1]));
 //   if (intervals.length <= 1) {
 //     return intervals;
 //   }
-//   return intervals.sort((a, b) => a[0] - b[0]);
+//   intervals.sort((a, b) => a[0] - b[0]);
+//   let mergedIntervals = [intervals[0]];
+//   for (let i = 1; i < intervals.length; i++) {
+//     let currentInterval = intervals[i];
+//     let lastMergedInterval = mergedIntervals[mergedIntervals.length - 1];
+//     if (currentInterval[0] <= lastMergedInterval[1]) {
+//       lastMergedInterval[1] = Math.max(
+//         currentInterval[1],
+//         lastMergedInterval[1]
+//       );
+//     } else {
+//       mergedIntervals.push(currentInterval);
+//     }
+//   }
+//   return mergedIntervals;
 // }
 
 // console.log(
