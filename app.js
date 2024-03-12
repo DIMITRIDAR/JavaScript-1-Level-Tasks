@@ -216,11 +216,17 @@
 //0, 1, 2, ..., n, and we have to find the missing number. For example, given the array:[3, 0, 1], the function
 //should return 2
 
-// function missingNumber(arr) {
-//   let range = arr[arr.length - 1] - arr[0];
-// }
+function missingNumber(numbers) {
+  let min = Math.min(...numbers);
+  let max = Math.max(...numbers);
+  for (i = min; i <= max; i++) {
+    if (!numbers.includes(i)) {
+      return i;
+    }
+  }
+}
 
-// console.log(missingNumber([3, 0, 1]));
+console.log(missingNumber([3, 0, 1]));
 
 //Task 4
 //Merge Intervals:Given an array of intervals, merge overlapping intervals and return the resulting merged intervals.
