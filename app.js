@@ -225,3 +225,26 @@
 //Task 4
 //Merge Intervals:Given an array of intervals, merge overlapping intervals and return the resulting merged intervals.
 //For example, given the intervals: [[1,3],[2,6],[8,10],[15,18]], the function should return [[1,6],[8,10],[15,18]].
+
+// function mergeIntervals(intervals) {
+//   if (intervals.length <= 1) {
+//     return intervals;
+//   }
+//   return intervals.sort((a, b) => a[0] - b[0]);
+// }
+
+// console.log(
+//   mergeIntervals([
+//     [1, 3],
+//     [2, 6],
+//     [8, 10],
+//     [15, 18],
+//   ])
+// );
+
+//.....................................................................................................................
+//Objects
+//Task 1
+//Object Deep Comparison: We have to write a function , that compares two objects deeply and returns true if they
+//are equal and false otherwise. The function should handle nested objects and arrays. For example, given the objects:
+//{ a: 1, b: { c: 2 } } and  { a: 1, b: { c: 2 } } should return true.
