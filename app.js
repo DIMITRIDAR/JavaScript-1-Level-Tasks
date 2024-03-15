@@ -269,6 +269,8 @@
 //are equal and false otherwise. The function should handle nested objects and arrays. For example, given the objects:
 //{ a: 1, b: { c: 2 } } and  { a: 1, b: { c: 2 } } should return true.
 
+//Way 1
+
 // let object1 = {
 //   name: "Bob",
 //   surName: "Clark",
@@ -281,3 +283,15 @@
 //   age: 28,
 // };
 // console.log(object1 === object2);  This is the example that refers to the object without nested objects or arrays.
+
+//Way 2
+
+// function comparisonStringify(object1, object2) {
+//   return JSON.stringify(object1) === JSON.stringify(object1);
+// }
+
+// console.log(comparisonStringify({ a: 1, b: { c: 2 } }, { a: 1, b: { c: 2 } }));
+
+//JSON.stringiFy converts objects and arrays into string and then when we compare strings deeply, it returns true,
+//at this time there is compared two objects by their actual content , not by their reference in memory(in this case
+//function returns false)
