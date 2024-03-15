@@ -268,3 +268,16 @@
 //Object Deep Comparison: We have to write a function , that compares two objects deeply and returns true if they
 //are equal and false otherwise. The function should handle nested objects and arrays. For example, given the objects:
 //{ a: 1, b: { c: 2 } } and  { a: 1, b: { c: 2 } } should return true.
+
+// let object1 = {
+//   name: "Bob",
+//   surName: "Clark",
+//   age: 28,
+// };
+
+// let object2 = {
+//   name: "Bob",
+//   surName: "Clark",
+//   age: 28,
+// };
+// console.log(object1 === object2);  This is the example that refers to the object without nested objects or arrays.
