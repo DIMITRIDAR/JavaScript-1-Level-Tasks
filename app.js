@@ -329,31 +329,49 @@
 //The serialization should handle nested objects and arrays. For example, given the object: { a: 1, b: { c: [2, 3] } },
 //the function should return the string : "{ a: 1, b: { c: [2, 3] } }".
 
-function serializeObject(obj) {
-  if (typeof obj !== "object") {
-    throw new Error("Insert an object!");
-  }
-  let serializedString = "{";
-  for (key in obj) {
-    if (obj.hasOwnProperty(key)) {
-      serializedString += `${key}:${serializeValue(obj[key])},`;
-    }
-  }
-  serializedString = serializedString.slice(0, -1);
-  serializedString += "}";
-  return serializedString;
+// function serializeObject(obj) {
+//   if (typeof obj !== "object") {
+//     throw new Error("Insert an object!");
+//   }
+//   let serializedString = "{";
+//   for (key in obj) {
+//     if (obj.hasOwnProperty(key)) {
+//       serializedString += `${key}:${serializeValue(obj[key])},`;
+//     }
+//   }
+//   serializedString = serializedString.slice(0, -1);
+//   serializedString += "}";
+//   return serializedString;
 
-  function serializeValue(value) {
-    if (typeof value === "object") {
-      if (Array.isArray(value)) {
-        return `[${value.map(serializeValue).join(",")}]`;
-      } else {
-        return serializeObject(value);
-      }
-    } else {
-      return JSON.stringify(value);
-    }
-  }
-}
+//   function serializeValue(value) {
+//     if (typeof value === "object") {
+//       if (Array.isArray(value)) {
+//         return `[${value.map(serializeValue).join(",")}]`;
+//       } else {
+//         return serializeObject(value);
+//       }
+//     } else {
+//       return JSON.stringify(value);
+//     }
+//   }
+// }
 
-console.log(serializeObject({ a: 1, b: { c: [2, 3] } }));
+// console.log(serializeObject({ a: 1, b: { c: [2, 3] } }));
+
+//Task 4
+//Object Prototype Extension: We have to write a function that extends an object's prototype with additional methods.
+//The additional methods should perform specific operations on the object's properties. For example, extend the array
+//prototype with a method called sum() that calculates the sum of all elements in the array.
+
+// Array.prototype.sum = function () {
+//   let sum = 0;
+//   for (let i = 0; i < this.length; i++) {
+//     sum += this[i];
+//   }
+//   return sum;
+// };
+
+// let numbers1 = [1, 2, 3, 4, 5];
+// let numbers2 = [4, 5, 6, 7, 8];
+
+// console.log(numbers2.sum());
