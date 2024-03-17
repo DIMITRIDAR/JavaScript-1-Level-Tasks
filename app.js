@@ -375,3 +375,8 @@
 // let numbers2 = [4, 5, 6, 7, 8];
 
 // console.log(numbers2.sum());
+
+//Task 5
+//Object Inheritance:Implement a class hierarchy using object-oriented programming principles. Create a base class
+//with common properties and methods, and then create child classes that inherit from the base class and add their own
+//specific properties and methods.
