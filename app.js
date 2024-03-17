@@ -329,6 +329,17 @@
 //The serialization should handle nested objects and arrays. For example, given the object: { a: 1, b: { c: [2, 3] } },
 //the function should return the string : "{ a: 1, b: { c: [2, 3] } }".
 
-function serialization(obj) {}
+function serializeObject(obj) {
+  if (typeof obj !== "object") {
+    throw new Error("Insert an object!");
+  }
+  let serializedString = "{";
+  for (key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      serializedString += `${key}:${serializeValue(obj[key])}`;
+    }
+  }
+  serializedString += "}";
+}
 
-console.log(serialization({ a: 1, b: { c: [2, 3] } }));
+console.log(serializeObject({ a: 1, b: { c: [2, 3] } }));
