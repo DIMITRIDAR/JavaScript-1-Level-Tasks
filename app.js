@@ -295,3 +295,31 @@
 //JSON.stringiFy converts objects and arrays into string and then when we compare strings deeply, it returns true,
 //at this time there is compared two objects by their actual content , not by their reference in memory(in this case
 //function returns false)
+
+//Task 2
+//Object transformation: We have to write a function that takes an array of objects and transforms them into a single
+//object. The transformation should use a specific property of each object as the key and another property as the value.
+//For example, given the array :[{ id: 1, name: 'Alice' }, { id: 2, name: 'Bob' }] and using the id property as the key
+//and the name property as the value, the function should return:{ 1: 'Alice', 2: 'Bob' }
+
+// function transformation(arr, keyProp, valueProp) {
+//   const result = {};
+//   arr.forEach((obj) => {
+//     const key = obj[keyProp];
+//     const value = obj[valueProp];
+//     result[key] = value; //Array braces is just a braces and doesn't mean keyProp's
+//   });
+//   return result;
+//   //index - it just means we're trying to access object property
+// }
+
+// console.log(
+//   transformation(
+//     [
+//       { id: 1, name: "Alice" },
+//       { id: 2, name: "Bob" },
+//     ],
+//     "id",
+//     "name"
+//   )
+// );
