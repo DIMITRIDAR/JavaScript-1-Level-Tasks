@@ -336,10 +336,24 @@ function serializeObject(obj) {
   let serializedString = "{";
   for (key in obj) {
     if (obj.hasOwnProperty(key)) {
-      serializedString += `${key}:${serializeValue(obj[key])}`;
+      serializedString += `${key}:${serializeValue(obj[key])},`;
     }
   }
+  serializedString = serializedString.slice(0, -1);
   serializedString += "}";
+  return serializedString;
+
+  function serializeValue(value) {
+    if (typeof value === "object") {
+      if (Array.isArray(value)) {
+        return `[${value.map(serializeValue).join(",")}]`;
+      } else {
+        return serializeObject(value);
+      }
+    } else {
+      return JSON.stringify(value);
+    }
+  }
 }
 
 console.log(serializeObject({ a: 1, b: { c: [2, 3] } }));
