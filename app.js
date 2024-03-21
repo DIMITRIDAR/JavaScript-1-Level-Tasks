@@ -380,3 +380,10 @@
 //Object Inheritance:Implement a class hierarchy using object-oriented programming principles. Create a base class
 //with common properties and methods, and then create child classes that inherit from the base class and add their own
 //specific properties and methods.
+//..........................................................................................................................
+//Conditionals/Loops
+
+//Task 1
+//Palindrome Checker:We have to write a program that prompts the user for a string and checks if it is a palindrome.
+//A palindrome is a word,phrase, number, or other sequence of characters that reads the same backward as forward.
+//Ignore spaces, punctuation and letter casing. USe conditional statements and loops to implement this behaviour.
