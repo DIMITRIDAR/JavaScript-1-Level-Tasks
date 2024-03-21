@@ -398,3 +398,8 @@
 // } else {
 //   console.log("Enter the correct Palindrome!");
 // }
+
+//Task 2
+//Fibonacci Sequence:In this task we have to write a program that prompts the user for a number and generates
+//the Fibonacci sequence up to that number. The Fibonacci sequence is a series of numbers in which each number
+//is the sum of the two preceding ones. Use a loop and conditional statements to generate the sequence.
