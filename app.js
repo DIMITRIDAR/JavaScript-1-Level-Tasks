@@ -428,3 +428,8 @@
 //Diamond Pattern: In this task we have to write a program that prompts the user for a number and prints
 //a diamond pattern using asterisks(*) and spaces. The number represents the number od rows in the diamond
 //(which should be odd). Use nested loops and conditional statements to achieve this pattern.
+
+//Task 4
+//Prime Number Generator: In this task we have to write a program that prompts the user for a range of numbers and generates
+//all prime within that range. Use a loop and conditional statements to check if each number is prime and output the
+//prime numbers.
