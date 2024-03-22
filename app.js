@@ -431,5 +431,20 @@
 
 //Task 4
 //Prime Number Generator: In this task we have to write a program that prompts the user for a range of numbers and generates
-//all prime within that range. Use a loop and conditional statements to check if each number is prime and output the
+//all prime numbers within that range. Use a loop and conditional statements to check if each number is prime and output the
 //prime numbers.
+
+//First way
+function isPrime(number) {
+  if (number <= 1) {
+    return false;
+  }
+  for (i = 2; i < Math.sqrt(number); i++) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(isPrime(8));
