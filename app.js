@@ -403,3 +403,23 @@
 //Fibonacci Sequence:In this task we have to write a program that prompts the user for a number and generates
 //the Fibonacci sequence up to that number. The Fibonacci sequence is a series of numbers in which each number
 //is the sum of the two preceding ones. Use a loop and conditional statements to generate the sequence.
+
+function Fibonacci(number) {
+  if (number <= 0) {
+    return "Wrong input!";
+  } else {
+    let fibonacci = [0, 1];
+    while (number > fibonacci[fibonacci.length - 1]) {
+      let newItem =
+        fibonacci[fibonacci.length - 1] + fibonacci[fibonacci.length - 2];
+      if (newItem > number) {
+        break;
+      }
+      fibonacci.push(newItem);
+    }
+    return fibonacci;
+  }
+}
+
+let input = parseInt(prompt("Enter the number!"));
+console.log(Fibonacci(input));
