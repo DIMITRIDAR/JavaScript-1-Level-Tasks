@@ -488,3 +488,10 @@
 // }
 
 // guessingGame();
+
+//.....................................................................................................................
+//Algorithms
+
+//Task 1
+//Anagram checker: We have to write a function, that takes two strings as an input and determines whether they are
+//anagrams of each other. Anagrams are words or phrases, that use the same characters in different order.
