@@ -510,3 +510,7 @@
 // }
 
 // console.log(anagramChecker("bob is a boy", "bbo ia s oyb"));
+
+//Task 2
+//Prime Number Generator: We have to write a function that takes a range of numbers as an input and  and returns
+//an array containing all prime numbers within that range.
