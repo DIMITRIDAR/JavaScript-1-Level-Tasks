@@ -495,3 +495,18 @@
 //Task 1
 //Anagram checker: We have to write a function, that takes two strings as an input and determines whether they are
 //anagrams of each other. Anagrams are words or phrases, that use the same characters in different order.
+
+// function anagramChecker(str1, str2) {
+//   str1 = str1.replaceAll(" ", "").toLowerCase();
+//   str2 = str2.replaceAll(" ", "").toLowerCase();
+//   if (str1.length !== str2.length) {
+//     return false;
+//   }
+
+//   let sortedStr1 = str1.split("").sort().join("");
+//   let sortedStr2 = str2.split("").sort().join("");
+
+//   return sortedStr1 === sortedStr2;
+// }
+
+// console.log(anagramChecker("bob is a boy", "bbo ia s oyb"));
