@@ -461,5 +461,30 @@
 //Task 5
 //Guessing Game:In this task we have to write a program that generates a random number between 1 and 100 and lets
 //the user guess the number. Provide feedback to the user, indicating whether the guessed number is too high or too low.
-//Use a loop and conditional statements to implement the game, allowing the user to to keep guessing until they guess
+//Use a loop and conditional statements to implement the game, allowing the user  to keep guessing until they guess
 //the correct number.
+
+// let randomNumber = Math.floor(Math.random() * 100) + 1;
+
+// function guessingGame() {
+//   let guessedNumber;
+//   let attempts = 0;
+//   while (true) {
+//     guessedNumber = parseInt(prompt("Guess the number between 1 and 100 :"));
+//     if (isNaN(guessedNumber) || guessedNumber > 100 || guessedNumber < 1) {
+//       console.log("Enter a valid number between 1 and 100!");
+//       continue;
+//     }
+//     attempts++;
+//     if (guessedNumber === randomNumber) {
+//       console.log(`Congrats! You guessed the number in ${attempts} attempts!`);
+//       break;
+//     } else if (guessedNumber > randomNumber) {
+//       console.log("Too high! Try again!");
+//     } else {
+//       console.log("Too low! Try again!");
+//     }
+//   }
+// }
+
+// guessingGame();
