@@ -546,4 +546,9 @@
 //   return primeNumbers;
 // }
 
-// console.log(generatePrimeNumbers(1, 20));
+// console.log(generatePrimeNumbers(1, 30));
+
+//Task 3
+//Sorting Algorithms: in this task we have to implement sorting algorithms such as Bubble Sort, or Quick Sort.
+//We have to write functions that take an array of numbers as an input and sort the array in ascending order,
+//using the chosen algorithm.
