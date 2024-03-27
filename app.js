@@ -514,3 +514,36 @@
 //Task 2
 //Prime Number Generator: We have to write a function that takes a range of numbers as an input and  and returns
 //an array containing all prime numbers within that range.
+
+// function isPrime(num) {
+//   if (num <= 1) {
+//     return false;
+//   }
+//   if (num <= 3) {
+//     return true;
+//   }
+//   if (num % 2 === 0 || num % 3 === 0) {
+//     return false;
+//   }
+
+//   let i = 5;
+//   while (i * i <= num) {
+//     if (num % i === 0 || num % (i + 2) === 0) {
+//       return false;
+//     }
+//     i += 6;
+//   }
+//   return true;
+// }
+
+// function generatePrimeNumbers(start, end) {
+//   let primeNumbers = [];
+//   for (i = start; i <= end; i++) {
+//     if (isPrime(i)) {
+//       primeNumbers.push(i);
+//     }
+//   }
+//   return primeNumbers;
+// }
+
+// console.log(generatePrimeNumbers(1, 20));
