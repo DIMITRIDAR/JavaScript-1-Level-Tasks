@@ -552,3 +552,11 @@
 //Sorting Algorithms: in this task we have to implement sorting algorithms such as Bubble Sort, or Quick Sort.
 //We have to write functions that take an array of numbers as an input and sort the array in ascending order,
 //using the chosen algorithm.
+
+//First way
+
+let arr = [1, 4, 10, 0, 23, 2, 6];
+
+let sortedArr = arr.sort((a, b) => a - b);
+
+console.log(sortedArr);
