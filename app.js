@@ -601,3 +601,16 @@
 //Binary Search: In this task we have to write a function that takes a sorted array of numbers and a target number
 //as an input and performs a binary search to determine if the target number exists in the array. Return True, if found,
 //and false otherwise.
+
+//First way with .includes method
+
+// function binarySearch(array, number) {
+//   let arr = [1, 2, 3, 4, 5, 7];
+//   if (arr.includes(number)) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(binarySearch([1, 2, 3, 4, 5, 7], 6));
