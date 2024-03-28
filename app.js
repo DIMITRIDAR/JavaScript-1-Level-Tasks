@@ -596,3 +596,8 @@
 // }
 
 // console.log(quickSort([1, 4, 10, 0, 3, 23, 2, 6]));
+
+//Task 4
+//Binary Search: In this task we have to write a function that takes a sorted array of numbers and a target number
+//as an input and performs a binary search to determine if the target number exists in the array. Return True, if found,
+//and false otherwise.
