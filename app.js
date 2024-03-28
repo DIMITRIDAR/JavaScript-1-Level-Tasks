@@ -571,3 +571,28 @@
 // }
 
 // console.log(bubbleSort([1, 4, 10, 0, 23, 2, 6]));
+
+//Third way - Quick Sort
+
+// function quickSort(arr) {
+//   if (arr.length <= 1) {
+//     return arr;
+//   }
+
+//   let dividingAxis = arr[Math.floor(arr.length / 2)];
+//   let leftHalf = [];
+//   let rightHalf = [];
+//   for (i = 0; i < arr.length; i++) {
+//     if (i === Math.floor(arr.length / 2)) {
+//       continue;
+//     }
+//     if (arr[i] < dividingAxis) {
+//       leftHalf.push(arr[i]);
+//     } else {
+//       rightHalf.push(arr[i]);
+//     }
+//   }
+//   return quickSort(leftHalf).concat([dividingAxis], quickSort(rightHalf));
+// }
+
+// console.log(quickSort([1, 4, 10, 0, 3, 23, 2, 6]));
