@@ -638,3 +638,12 @@
 //Task 5
 //Unique Elements:In this task we have to write a function that takes an array of  numbers as an input and returns a
 //new array containing only the unique elements of the original array. Remove any duplicate numbers.
+//[1,2,2,3,3,4,4,5,5,6,7,7,7] ---> [1,2,3,4,5,6,7]
+
+//First Way
+
+function removeDuplicates(arr) {
+  return [...new Set(arr)];
+}
+
+console.log(removeDuplicates([1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 7, 7, 7]));
