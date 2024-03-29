@@ -653,3 +653,15 @@
 // let removeDuplicates = (arr) => [...new Set(arr)];
 
 // console.log(removeDuplicates([1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 7, 7, 7]));
+
+//Third Way - Using Algorithm
+
+function removeDuplicates(arr) {
+  let uniqueSet = new Set();
+  for (let num of arr) {
+    uniqueSet.add(num);
+  }
+  return Array.from(uniqueSet);
+}
+
+console.log(removeDuplicates([1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 7, 7, 7]));
