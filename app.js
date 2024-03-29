@@ -617,21 +617,24 @@
 
 //Second way, using a Binary Search algorithm
 
-function binarySearch(arr, number) {
-  let left = 0;
-  let right = arr.length - 1;
+// function binarySearch(arr, number) {
+//   let left = 0;
+//   let right = arr.length - 1;
+//   while (left <= right) {
+//     let middle = Math.floor((left + right) / 2);
+//     if (arr[middle] === number) {
+//       return true;
+//     } else if (arr[middle] < number) {
+//       left = middle + 1;
+//     } else {
+//       right = middle - 1;
+//     }
+//   }
+//   return false;
+// }
 
-  while (left <= right) {
-    let middle = Math.floor((left + right) / 2);
-    if (arr[middle] === number) {
-      return true;
-    } else if (arr[middle] < number) {
-      left = middle + 1;
-    } else {
-      right = middle - 1;
-    }
-  }
-  return false;
-}
+// console.log(binarySearch([1, 2, 3, 4, 5, 7], 9));
 
-console.log(binarySearch([1, 2, 3, 4, 5, 7], 5));
+//Task 5
+//Unique Elements:In this task we have to write a function that takes an array of  numbers as an input and returns a
+//new array containing only the unique elements of the original array. Remove any duplicate numbers.
