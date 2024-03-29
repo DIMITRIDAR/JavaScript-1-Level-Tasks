@@ -670,10 +670,25 @@
 //Palindrome Checker:In this task we have to write a function that takes a string as an input and determines whether
 //it is a palindrome. Consider letters and digits only, ignoring spaces, punctuation and letter casing.
 
+//First Way
+
 // function isPalindrome(str) {
 //   let newString = str.toLowerCase().replace(/[ .]/g, "");
 
 //   return newString === newString.split("").reverse().join("");
+// }
+
+// console.log(isPalindrome("Mr. Owl ate my metal worm"));
+
+// function isPalindrome(str) {
+//   let clearedString = str.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+
+//   for (let i = 0; i < clearedString.length / 2; i++) {
+//     if (clearedString[i] !== clearedString[clearedString.length - 1 - i]) {
+//       return false;
+//     }
+//   }
+//   return true;
 // }
 
 // console.log(isPalindrome("Mr. Owl ate my metal worm"));
