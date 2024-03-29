@@ -656,12 +656,16 @@
 
 //Third Way - Using Algorithm
 
-function removeDuplicates(arr) {
-  let uniqueSet = new Set();
-  for (let num of arr) {
-    uniqueSet.add(num);
-  }
-  return Array.from(uniqueSet);
-}
+// function removeDuplicates(arr) {
+//   let uniqueSet = new Set();
+//   for (let num of arr) {
+//     uniqueSet.add(num);
+//   }
+//   return Array.from(uniqueSet);
+// }
 
-console.log(removeDuplicates([1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 7, 7, 7]));
+// console.log(removeDuplicates([1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 7, 7, 7]));
+
+//Task 6
+//Palindrome Checker:In this task we have to write a function that takes a string as an input and determines whether
+//it is a palindrome. Consider letters and digits only, ignoring spaces, punctuation and letter casing.
