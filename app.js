@@ -692,3 +692,7 @@
 // }
 
 // console.log(isPalindrome("Mr. Owl ate my metal worm"));
+
+//Task 7
+//Largest Sum Subarray: In this task we have to write a function that takes an array of numbers as an input and finds
+//the contiguous subarray with the largest sum. Return the sum of that subarray.
