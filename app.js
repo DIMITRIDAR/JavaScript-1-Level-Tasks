@@ -776,3 +776,13 @@
 // let arr1 = [1, 2, 3];
 // let arr2 = [...arr1]; with spread operator we can create an array clones the way they don't look at the same area of
 //memory
+
+//The second way of solution
+
+// function deepClone(obj) {
+//   return JSON.parse(JSON.stringify(obj));
+// }
+
+//JSON.parse converts a string into object and JSON.stringify converts an object into a string
+
+// console.log(deepClone({ name: "Bob", age: 28 }));
