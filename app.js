@@ -717,3 +717,17 @@
 //Task 8
 //Missing Number : In this task we have to write a function that takes an array of numbers from 1 to n , with one number
 //missing and returns the missing number.
+
+//One way shows us the solution when there is only one missing number in an array
+
+function findMissingNumber(arr) {
+  let min = Math.min(...arr);
+  let max = Math.max(...arr);
+  for (let i = min; i <= max; i++) {
+    if (!arr.includes(i)) {
+      return i;
+    }
+  }
+}
+
+console.log(findMissingNumber([1, 2, 3, 5, 6, 7, 8, 9]));
