@@ -748,3 +748,7 @@
 // }
 
 // console.log(findMissingNumbers([1, 2, 3, 5, 7, 9, 10, 12, 14]));
+
+//Deep Clone: In this task we have to write a function that performs a deep clone of an object. The function
+//should create a new object with the same structure and values as the original, without any reference to the original
+//object.
