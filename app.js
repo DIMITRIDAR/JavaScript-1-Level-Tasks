@@ -696,3 +696,20 @@
 //Task 7
 //Largest Sum Subarray: In this task we have to write a function that takes an array of numbers as an input and finds
 //the contiguous subarray with the largest sum. Return the sum of that subarray.
+
+// function subArraySum(arr) {
+//   let currentSum = arr[0];
+//   let maxSum = arr[0];
+//   for (let i = 1; i < arr.length; i++) {
+//     currentSum += arr[i];
+//     if (currentSum < arr[i]) {
+//       currentSum = arr[i];
+//     } else if (currentSum > maxSum) {
+//       maxSum = currentSum;
+//     }
+//   }
+
+//   return maxSum;
+// }
+
+// console.log(subArraySum([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
