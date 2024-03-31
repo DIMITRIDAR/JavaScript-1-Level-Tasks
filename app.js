@@ -752,3 +752,27 @@
 //Deep Clone: In this task we have to write a function that performs a deep clone of an object. The function
 //should create a new object with the same structure and values as the original, without any reference to the original
 //object.
+
+//First Way of solution - this way creates the shallow copy of the object. If we change any property of original object,
+//it doesn't affect to copied object properties, because their references are saved in a different memories.
+
+// function deepClone(obj) {
+//   let object = { name: "Bob", age: 28, profession: "Economist" };
+//   object.name = "John";
+//   let clonedObj = { ...obj };
+//   return clonedObj;
+// }
+
+// console.log(deepClone({ name: "Bob", age: 28, profession: "Economist" }));
+
+//One more example to prove the theory above
+// let obj1 = { name: "Bob", age: 28 };
+// let obj2 = { ...obj1 };
+// obj2.name = "John";
+// console.log(obj1);
+// console.log(obj2);  It's prohibited to create an object clone like this because both of these objects look at the same
+//area of memory
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [...arr1]; with spread operator we can create an array clones the way they don't look at the same area of
+//memory
