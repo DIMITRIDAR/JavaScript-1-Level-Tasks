@@ -713,3 +713,7 @@
 // }
 
 // console.log(subArraySum([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
+
+//Task 8
+//Missing Number : In this task we have to write a function that takes an array of numbers from 1 to n , with one number
+//missing and returns the missing number.
