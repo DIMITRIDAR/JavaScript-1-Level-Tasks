@@ -786,3 +786,7 @@
 //JSON.parse converts a string into object and JSON.stringify converts an object into a string
 
 // console.log(deepClone({ name: "Bob", age: 28 }));
+
+//Task 10
+//Longest common Prefix : In this task we have to write a function that takes an array of strings as an input and
+//and finds the longest common prefix among the strings. Return an empty strings if there is no common prefix.
