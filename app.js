@@ -720,14 +720,31 @@
 
 //One way shows us the solution when there is only one missing number in an array
 
-function findMissingNumber(arr) {
-  let min = Math.min(...arr);
-  let max = Math.max(...arr);
-  for (let i = min; i <= max; i++) {
-    if (!arr.includes(i)) {
-      return i;
-    }
-  }
-}
+// function findMissingNumber(arr) {
+//   let min = Math.min(...arr);
+//   let max = Math.max(...arr);
+//   for (let i = min; i <= max; i++) {
+//     if (!arr.includes(i)) {
+//       return i;
+//     }
+//   }
+// }
 
-console.log(findMissingNumber([1, 2, 3, 5, 6, 7, 8, 9]));
+// console.log(findMissingNumber([1, 2, 3, 5, 6, 7, 8, 9]));
+
+//Second way shows us the solution when there are missing more than one members in an array(It doesn't matter how
+//many they are)
+
+// function findMissingNumbers(arr) {
+//   let min = Math.min(...arr);
+//   let max = Math.max(...arr);
+//   let missingArr = [];
+//   for (let i = min; i <= max; i++) {
+//     if (!arr.includes(i)) {
+//       missingArr.push(i);
+//     }
+//   }
+//   return missingArr;
+// }
+
+// console.log(findMissingNumbers([1, 2, 3, 5, 7, 9, 10, 12, 14]));
