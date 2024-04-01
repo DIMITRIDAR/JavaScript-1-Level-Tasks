@@ -426,8 +426,22 @@
 
 //Task 3
 //Diamond Pattern: In this task we have to write a program that prompts the user for a number and prints
-//a diamond pattern using asterisks(*) and spaces. The number represents the number od rows in the diamond
+//a diamond pattern using asterisks(*) and spaces. The number represents the number of rows in the diamond
 //(which should be odd). Use nested loops and conditional statements to achieve this pattern.
+
+function diamondPattern(rows) {
+  if (rows % 2 === 0) {
+    console.log("Number of rows must be odd");
+    return;
+  }
+  let midPoint = Math.floor(rows / 2) + 1;
+  let spaces, stars;
+  for (let i = 1; i <= midPoint; i++) {
+    spaces = midPoint - i;
+    stars = 2 * i - 1;
+    console.log(" ".repeat(spaces) + "*".repeat(stars));
+  }
+}
 
 //Task 4
 //Prime Number Generator: In this task we have to write a program that prompts the user for a range of numbers and generates
