@@ -790,3 +790,22 @@
 //Task 10
 //Longest common Prefix : In this task we have to write a function that takes an array of strings as an input and
 //and finds the longest common prefix among the strings. Return an empty strings if there is no common prefix.
+
+// function longestCommonPrefix(strings) {
+//   if (strings.length === 0) {
+//     return "";
+//   }
+//   for (let i = 0; i < strings[0].length; i++) {
+//     for (let j = 1; j < strings.length; j++) {
+//       if (strings[j][i] !== strings[0][i] || i > strings[j].length) {
+//         return strings[0].substring(0, i);
+//       }
+//     }
+//   }
+//   return strings[0];
+// }
+
+// console.log(longestCommonPrefix(["flow", "flower", "floor", "flown"]));
+
+//In this task we have two loops : i and j . i loop here provides iteration through the characters of the strings, j loop
+//provides iteration through the strings of the array.
