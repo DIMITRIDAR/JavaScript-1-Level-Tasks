@@ -381,6 +381,38 @@
 //with common properties and methods, and then create child classes that inherit from the base class and add their own
 //specific properties and methods.
 
+// class Person {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+
+//   sayHello() {
+//     console.log("Hello world!");
+//   }
+// }
+
+// const Person1 = new Person("Bob", 28);
+// // console.log(Person1);
+// // Person1.sayHello();
+// // console.log(Person1);
+
+// class Student extends Person {
+//   constructor(name, age, grade) {
+//     super(name, age);
+//     this.grade = grade;
+//   }
+
+//   sayGoodbye() {
+//     console.log("Goodbye friend!");
+//   }
+// }
+
+// const Student1 = new Student("Charlie", 30, 98);
+// // console.log(Student1);
+// Student1.sayGoodbye();
+// console.log(Student1);
+
 //..........................................................................................................................
 //Conditionals/Loops
 
